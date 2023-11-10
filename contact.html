@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,500&family=Noto+Sans+JP&family=Open+Sans:wght@300;400&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <form class="contact-form">
+          <div>
+            <label for="contact-name">Name:</label>
+            <input
+              required
+              type="text"
+              name="name"
+              id="contact-name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div>
+            <label for="contact-massage">Comment:</label>
+            <textarea
+              name="message"
+              id="contact-message"
+              cols="40"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit" arial-label="send" class="send-btn">
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer id="about">
+      <h3>About Us</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis commodi
+        modi ex quis qui vitae debitis. Nostrum maiores sunt ipsum veritatis in,
+        reiciendis pariatur tenetur, aliquam illo quas provident adipisci?
+      </p>
+    </footer>
+    <script src="../app.js"></script>
+  </body>
+</html>

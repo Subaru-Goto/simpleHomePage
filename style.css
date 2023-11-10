@@ -1,0 +1,101 @@
+/* Set default color */
+:root {
+  --defColor: #191970;
+}
+/* Remove the default margin and padding in the browser */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Keep footer at the bottom */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Nav bar */
+.nav-bar {
+  background-color: var(--defColor);
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  color: #a0c0c9;
+  transition-delay: 0.3s;
+}
+
+/* Main */
+.content {
+  height: 100%;
+  width: 640px;
+  margin: auto;
+}
+
+/* Contact Form */
+
+label {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+input {
+  text-align: center;
+}
+
+.contact-form {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#contact-name {
+  border-radius: 5px;
+}
+
+#contact-message {
+  box-sizing: content-box;
+  resize: none;
+  border-radius: 5px;
+}
+
+.send-btn {
+  border: 0 solid none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: var(--defColor);
+  color: white;
+}
+
+/* Footer */
+
+#about {
+  background-color: var(--defColor);
+  margin-bottom: 0;
+  margin-top: auto;
+  padding: 5px;
+  color: white;
+}
